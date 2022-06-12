@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+# Lab3
+# Author ID: Kenneth Chu
+# 158945204
+
+def read_file_string(file_name):
+        read_file_string = str(file_name)
+        return read_file_string
+
+def read_file(file_name):
+        KenFile = open(r'/home/kchu29/Documents/ops445/lab4/' + file_name, 'r')
+        read_file = [(line.strip()) for line in KenFile]
+        KenFile.close()
+        return read_file
+
+def write_file(file_name):
+        KenFile = open(r'/home/kchu29/Documents/ops445/lab4/' + file_name, 'w')
+        KenFile.write('Kenneth')
+        KenFile.close()
+        return write_file
+
+if __name__ == '__main__':
+        file_name = 'kenneth.txt'
+        write_file(file_name)
+        print(read_file_string(file_name))
+        print(read_file(file_name))
