@@ -3,6 +3,10 @@
 # Author ID: Kenneth Chu
 # 158945204
 
+def helloWorld():
+	print('Hello World')
+helloWorld()
+
 def read_file_string(file_name):
         read_file_string = str(file_name)
         return read_file_string
